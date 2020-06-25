@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"SPI_Master_TB_func_impl.v" \
+"../../../../../FPGA_1.srcs/sources_1/imports/source/SPI_Master.v" \
+
+sv xil_defaultlib  \
+"../../../../../FPGA_1.srcs/sim_1/imports/sim/SPI_Master_TB.sv" \
+
+# Do not sort compile order
+nosort
